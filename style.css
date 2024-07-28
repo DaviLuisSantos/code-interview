@@ -1,4 +1,4 @@
-/* Estilo do corpo */
+/* Body style */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +6,7 @@ body {
     background-color: #ffffff;
 }
 
-/* Estilo do breadcrumb */
+/* Breadcrumb style */
 .breadcrumbs {
     display: flex;
     justify-content: space-between;
@@ -16,31 +16,31 @@ body {
     margin: auto;
 }
 
-/* Estilo inicial e final do breadcrumb */
+/* Initial and final breadcrumb style */
 .broad-start, .broad-end {
     display: flex;
     align-items: center;
 }
 
-/* Estilo dos links do breadcrumb inicial */
+/* Initial breadcrumb links style */
 .broad-start a {
     margin-right: 10px;
     position: relative;
 }
 
-/* Adiciona uma barra após cada link, exceto o último */
+/* Add a slash after each link except the last one */
 .broad-start a::after {
     content: '/';
     position: absolute;
     right: -10px;
 }
 
-/* Remove a barra após o último link */
+/* Remove the slash after the last link */
 .broad-start a:last-child::after {
     content: '';
 }
 
-/* Estilo do separador e ícone na parte final do breadcrumb */
+/* Separator and icon style in the final breadcrumb */
 .broad-end .separator {
     border-left: 1px solid #000;
     height: 20px;
@@ -49,22 +49,22 @@ body {
 
 .broad-end i {
     margin-left: 10px;
-    /* Espaço entre o ícone e o texto */
+    /* Space between the icon and text */
 }
 
-/* Repetição desnecessária de estilos */
+/* Unnecessary repetition of styles */
 .broad-start, .broad-end {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-/* Repetição desnecessária de estilos */
+/* Unnecessary repetition of styles */
 .broad-start a, .broad-end a {
     margin-right: 10px;
 }
 
-/* Estilo dos links e elementos publicados */
+/* Style of links and published elements */
 .publish, .publish a {
     color: #3565a9;
     font-weight: bold;
@@ -72,29 +72,29 @@ body {
     align-items: center;
 }
 
-/* Correção do separador na parte final do breadcrumb */
+/* Correction of the separator in the final breadcrumb */
 .broad-end .separator {
     border-left: 2px solid #ccc;
-    /* Ajuste a cor conforme necessário */
+    /* Adjust color as needed */
     height: 15px;
-    /* Ajuste a altura conforme necessário */
+    /* Adjust height as needed */
     margin: 0 10px;
-    /* Espaço em torno da linha vertical */
+    /* Space around the vertical line */
 }
 
-/* Correção do espaço entre ícone e texto na parte final do breadcrumb */
+/* Correction of the space between the icon and text in the final breadcrumb */
 .broad-end i {
     margin-left: 5px;
-    /* Espaço entre o ícone e o texto */
+    /* Space between the icon and text */
 }
 
-/* Estilo geral dos links */
+/* General link style */
 a {
     text-decoration: none;
     color: #9da3ae;
 }
 
-/* Estilo da barra de status */
+/* Status bar style */
 .status-bar {
     display: flex;
     justify-content: space-between;
@@ -107,10 +107,10 @@ a {
     height: 5vh;
 }
 
-/* Estilo da seção do usuário */
+/* User section style */
 #user-section {
     display: inline;
-    /* Corrigir: flex para inline */
+    /* Correct: flex to inline */
     justify-content: space-between;
     align-items: center;
     border: 2px solid #ccc;
@@ -121,7 +121,7 @@ a {
     height: 40px;
 }
 
-/* Estilo dos itens da barra de status */
+/* Style of status bar items */
 .status-bar .item {
     display: flex;
     align-items: center;
@@ -129,7 +129,7 @@ a {
     height: 100%;
 }
 
-/* Estilo do início da barra de status */
+/* Start of the status bar style */
 .status-start {
     display: flex;
     align-items: center;
@@ -137,7 +137,7 @@ a {
     width: 50%;
 }
 
-/* Estilo do fim da barra de status */
+/* End of the status bar style */
 .status-end {
     display: flex;
     align-items: center;
@@ -146,7 +146,7 @@ a {
     width: 50%;
 }
 
-/* Estilo do ícone P */
+/* Icon P style */
 .icon-P {
     display: flex;
     align-items: center;
@@ -161,7 +161,7 @@ a {
     transform: rotate(45deg);
 }
 
-/* Estilo dos ícones da barra de status */
+/* Status bar icon styles */
 .status-bar .icon-bar {
     margin-right: 10px;
     font-size: 1.5em;
@@ -180,13 +180,13 @@ a {
     color: #212936;
 }
 
-/* Estilo do texto na barra de status */
+/* Text style in the status bar */
 .status-bar .text {
     font-size: 1em;
     color: #ccc;
 }
 
-/* Estilo do conteúdo */
+/* Content style */
 .content {
     display: flex;
     flex-direction: column;
@@ -194,7 +194,7 @@ a {
     align-items: center;
 }
 
-/* Estilo dos textos */
+/* Text styles */
 .texto {
     margin: 0;
     display: flex;
@@ -204,7 +204,7 @@ a {
     gap: 0;
 }
 
-/* Wrapper de conteúdo */
+/* Content wrapper */
 .content-wrapper {
     display: flex;
     flex-direction: column;
@@ -214,20 +214,20 @@ a {
     margin: auto;
 }
 
-/* Estilo dos títulos h1 */
+/* H1 title style */
 h1 {
     font-size: 6vh;
     margin: 0;
     color: #0d121c;
 }
 
-/* Estilo das linhas horizontais */
+/* Horizontal line styles */
 hr {
     color: #ccc;
     width: 100%;
 }
 
-/* Estilo dos parágrafos de texto */
+/* Paragraph text style */
 .texto p {
     font-size: 20px;
     margin: 0;
@@ -237,7 +237,7 @@ hr {
     color: #4d5562;
 }
 
-/* Estilo do rodapé */
+/* Footer style */
 .footer {
     display: flex;
     flex-direction: column;
@@ -251,7 +251,7 @@ hr {
     position: relative;
 }
 
-/* Estilo dos inputs no rodapé */
+/* Input style in the footer */
 .footer input {
     width: 100%;
     height: 100%;
@@ -264,20 +264,20 @@ hr {
     outline: none;
 }
 
-/* Estilo do input de comando */
+/* Command input style */
 #commandInput {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
 }
 
-/* Estilo do placeholder no input de comando */
+/* Placeholder style in command input */
 #commandInput.placeholder-heading-1::placeholder {
     font-size: 40px;
     font-weight: bold;
 }
 
-/* Estilo das opções */
+/* Options style */
 .options {
     display: none;
     flex-direction: column;
@@ -297,34 +297,34 @@ hr {
     line-height: 1.5;
 }
 
-/* Estilo dos títulos das opções */
+/* Option title styles */
 .option-title {
     font-weight: bold;
     margin-bottom: 5px;
     font-size: 20px;
 }
 
-/* Estilo do título */
+/* Title style */
 .titulo {
     margin: 10px;
     padding: auto;
     line-height: 1.2;
 }
 
-/* Estilo das descrições das opções */
+/* Option description styles */
 .option-description {
     margin-bottom: 10px;
     font-size: 15px;
     color: #555;
 }
 
-/* Estilo da palavra-chave do filtro */
+/* Filter keyword style */
 .filter-keyword {
     margin: 10px;
     padding: auto;
 }
 
-/* Estilo das opções */
+/* Option styles */
 .option {
     padding: 10px;
     cursor: pointer;
@@ -333,30 +333,30 @@ hr {
     margin: 5px 0;
 }
 
-/* Estilo das opções em negrito */
+/* Bold option styles */
 .option.bold {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
 
-/* Texto em negrito */
+/* Bold text */
 .option.bold .option-text {
     font-weight: bold;
 }
 
-/* Estilo das opções ao passar o mouse */
+/* Option hover style */
 .option:hover {
     background-color: #f0f0f0;
 }
 
-/* Estilo dos pequenos textos nas opções */
+/* Small text styles in options */
 .option small {
     display: flex;
     color: #999;
 }
 
-/* Estilo das palavras-chave */
+/* Keyword styles */
 .keyword {
     background-color: #007bff;
     color: white;
@@ -365,28 +365,28 @@ hr {
     margin-left: 5px;
 }
 
-/* Estilo dos ícones nas opções */
+/* Option icon styles */
 .option i {
     font-size: 2.5em;
     margin-right: 10px;
 }
 
-/* Estilo dos divs nas opções */
+/* Option div styles */
 .option div {
     display: flex;
     flex-direction: column;
 }
 
-/* Estilo do texto nas opções */
+/* Option text styles */
 .option .option-text {
     flex: 1;
 }
 
-/* Estilo dos pequenos textos nas opções */
+/* Small text styles in options */
 .option small {
     font-size: 0.8em;
 }
 
-.heading-created{
+.heading-created {
     color: #212936;
 }
