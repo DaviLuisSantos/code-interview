@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end Developer Test Project</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="breadcrumbs">
+            <div class="broad-start">
+                <a href=""><i class="fa-solid fa-angles-right"></i><i class="fa-solid fa-book-open"></i></a>
+                <a href="">Main</a>
+                <a href="">Getting started</a>
+                <a href="">Front-end developer test project</a>
+            </div>
+            <div class="broad-end">
+                <a class="active" href="#about"><i class="fa-solid fa-lock-open"></i> Editing</a>
+                <div class="separator"></div>
+                <div class="publish">
+                    <a class="active" href="#about">Publish Space </a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>        
+
+        <div class="content-wrapper">
+            <div class="status-bar">
+                <div class="status-start">
+                    <div class="item">
+                        <div class="icon-P">P</div>
+                        <div style="border-left:2px solid #ccc;height:40%;margin-left: 10px;"></div>
+                    </div>
+                    <div class="item">
+                        <div class="icon-bar"><i class="fa-regular fa-clock"></i></div>
+                        <div class="text">0min</div>
+                        <div style="border-left:2px solid #ccc;height:40%;margin-left: 10px;"></div>
+                    </div>
+                    <div class="item">
+                        <div class="icon-bar"><i class="fa-solid fa-circle-user"></i></div>
+                        <div style="border-left:2px solid #ccc;height:40%;margin-left: 10px;"></div>
+                    </div>
+                    <div class="item">
+                        <div class="icon-bar" id="seta"><i class="fa-solid fa-arrow-down"></i></div>
+                        <div class="text">0</div>
+                    </div>
+                </div>
+                <div class="status-end">
+                    <div class="item">
+                        <div class="icon-bar"><i class="fa-solid fa-check"></i></div>
+                    </div>
+                    <div class="item">
+                        <div class="icon-cloud"><i class="fa-solid fa-cloud"></i></div>
+                    </div>
+                    <div class="item">
+                        <div class="icon-ellipsis"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="texto">
+                    <h1>Front-end developer test project</h1>
+                    <hr />
+                    <p>Your goal is to make a page that looks exactly like this one, and has the ability to create H1
+                        text simply by typing / then 1, then typing text, and hitting enter.</p>
+                </div>
+            </div>
+            <div class="footer">
+                <input type="text" id="commandInput" placeholder="Type / for blocks, @ to link docs or people">
+                <div class="options" id="options">
+                    <div class="titulo">
+                        <div class="option-title">Add blocks</div>
+                        <div class="option-description">Keep typing to filter, or escape to exit</div>
+                        <div class="filter-keyword" data-value="filter">
+                            <span>Filtering keyword </span><span class="keyword"></span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,392 @@
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2vh;
+    background-color: #ffffff;
+}
+
+/* Estilo do breadcrumb */
+.breadcrumbs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    margin: auto;
+}
+
+/* Estilo inicial e final do breadcrumb */
+.broad-start, .broad-end {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo dos links do breadcrumb inicial */
+.broad-start a {
+    margin-right: 10px;
+    position: relative;
+}
+
+/* Adiciona uma barra após cada link, exceto o último */
+.broad-start a::after {
+    content: '/';
+    position: absolute;
+    right: -10px;
+}
+
+/* Remove a barra após o último link */
+.broad-start a:last-child::after {
+    content: '';
+}
+
+/* Estilo do separador e ícone na parte final do breadcrumb */
+.broad-end .separator {
+    border-left: 1px solid #000;
+    height: 20px;
+    margin: 0 10px;
+}
+
+.broad-end i {
+    margin-left: 10px;
+    /* Espaço entre o ícone e o texto */
+}
+
+/* Repetição desnecessária de estilos */
+.broad-start, .broad-end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Repetição desnecessária de estilos */
+.broad-start a, .broad-end a {
+    margin-right: 10px;
+}
+
+/* Estilo dos links e elementos publicados */
+.publish, .publish a {
+    color: #3565a9;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* Correção do separador na parte final do breadcrumb */
+.broad-end .separator {
+    border-left: 2px solid #ccc;
+    /* Ajuste a cor conforme necessário */
+    height: 15px;
+    /* Ajuste a altura conforme necessário */
+    margin: 0 10px;
+    /* Espaço em torno da linha vertical */
+}
+
+/* Correção do espaço entre ícone e texto na parte final do breadcrumb */
+.broad-end i {
+    margin-left: 5px;
+    /* Espaço entre o ícone e o texto */
+}
+
+/* Estilo geral dos links */
+a {
+    text-decoration: none;
+    color: #9da3ae;
+}
+
+/* Estilo da barra de status */
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #ccc;
+    margin: 3.5vh;
+    width: 100%;
+    border-radius: 7.5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 5vh;
+}
+
+/* Estilo da seção do usuário */
+#user-section {
+    display: inline;
+    /* Corrigir: flex para inline */
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #ccc;
+    margin: auto;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 40px;
+}
+
+/* Estilo dos itens da barra de status */
+.status-bar .item {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 100%;
+}
+
+/* Estilo do início da barra de status */
+.status-start {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+/* Estilo do fim da barra de status */
+.status-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 50%;
+}
+
+/* Estilo do ícone P */
+.icon-P {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #347659;
+    background-color: #d9f9e6;
+}
+
+#seta {
+    transform: rotate(45deg);
+}
+
+/* Estilo dos ícones da barra de status */
+.status-bar .icon-bar {
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: #ccc;
+}
+
+.status-bar .icon-bar:hover {
+    color: #333;
+}
+
+.status-bar .icon-cloud {
+    color: #43946c;
+}
+
+.status-bar .icon-ellipsis {
+    color: #212936;
+}
+
+/* Estilo do texto na barra de status */
+.status-bar .text {
+    font-size: 1em;
+    color: #ccc;
+}
+
+/* Estilo do conteúdo */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo dos textos */
+.texto {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    gap: 0;
+}
+
+/* Wrapper de conteúdo */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+/* Estilo dos títulos h1 */
+h1 {
+    font-size: 6vh;
+    margin: 0;
+    color: #0d121c;
+}
+
+/* Estilo das linhas horizontais */
+hr {
+    color: #ccc;
+    width: 100%;
+}
+
+/* Estilo dos parágrafos de texto */
+.texto p {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 2vh;
+    line-height: 1.5;
+    margin-bottom: 8vh;
+    color: #4d5562;
+}
+
+/* Estilo do rodapé */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    direction: rtl;
+    text-align: right;
+    margin: auto;
+    position: relative;
+}
+
+/* Estilo dos inputs no rodapé */
+.footer input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    direction: ltr;
+    text-align: left;
+    outline: none;
+}
+
+/* Estilo do input de comando */
+#commandInput {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilo do placeholder no input de comando */
+#commandInput.placeholder-heading-1::placeholder {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Estilo das opções */
+.options {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 40%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding-bottom: 25vh;
+    box-sizing: border-box;
+    border-radius: 5px;
+    direction: ltr;
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* Estilo dos títulos das opções */
+.option-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+/* Estilo do título */
+.titulo {
+    margin: 10px;
+    padding: auto;
+    line-height: 1.2;
+}
+
+/* Estilo das descrições das opções */
+.option-description {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #555;
+}
+
+/* Estilo da palavra-chave do filtro */
+.filter-keyword {
+    margin: 10px;
+    padding: auto;
+}
+
+/* Estilo das opções */
+.option {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+/* Estilo das opções em negrito */
+.option.bold {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/* Texto em negrito */
+.option.bold .option-text {
+    font-weight: bold;
+}
+
+/* Estilo das opções ao passar o mouse */
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilo dos pequenos textos nas opções */
+.option small {
+    display: flex;
+    color: #999;
+}
+
+/* Estilo das palavras-chave */
+.keyword {
+    background-color: #007bff;
+    color: white;
+    border-radius: 3px;
+    padding: 0 5px;
+    margin-left: 5px;
+}
+
+/* Estilo dos ícones nas opções */
+.option i {
+    font-size: 2.5em;
+    margin-right: 10px;
+}
+
+/* Estilo dos divs nas opções */
+.option div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo do texto nas opções */
+.option .option-text {
+    flex: 1;
+}
+
+/* Estilo dos pequenos textos nas opções */
+.option small {
+    font-size: 0.8em;
+}
+
+.heading-created{
+    color: #212936;
+}
